@@ -48,6 +48,8 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.0/dist/chart.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
 
 <body>
   <a class="close-navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -146,16 +148,17 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
 
   <section class="container-fluid flex-column" id="home">
     <div class="row mx-4">
-      <img src="assets/img/bianco.svg" alt="3EM Engineering" height="150%">
+      <img src="assets/img/bianco.svg" alt="3EM Engineering" height="150%"  style="z-index: 99;">
       <span class="col-12 home-subtitles mt-3"></span>
     </div>
-    <div class="row home-button-row">
+    <div class="row home-button-row" style="z-index: 99;">
       <div class="col-12">
         <a href="#chiSiamo">
           <i class="fa-solid fa-chevron-down"></i>
         </a>
       </div>
     </div>
+    <div id="particles-js"></div>
   </section>
 
   <section class="container px-4 px-md-auto" id="chiSiamo">
@@ -543,6 +546,7 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
       </div>
     </div>
   </section>
+
   <section class="container px-4 px-md-auto mt-5" id="collaborazioni">
     <div class="col-12 section-mini-title">University</div>
     <div class="slider">
@@ -701,6 +705,7 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
   <script src="scripts/main.js"></script>
+  <script src="js/particles.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
