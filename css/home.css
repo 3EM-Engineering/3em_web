@@ -1,0 +1,334 @@
+#rss-p > a {
+color : #fff !important;
+text-decoration: underline !important;
+//font-weight: bold;
+}
+.home-container {
+    position: absolute;
+    bottom: 0;
+    width:90%;
+    height:400px;
+  }
+  .RSS-CONTAINER {
+    margin-left:10px;
+    width:100%;
+    height:50px;
+    background-color:slategray;
+    opacity: 0.7;
+    margin-top:350px;
+    transition: all 0.5s;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .RSS-CONTAINER:hover {
+    opacity: 1;
+    height:100%;
+    width:400px;
+    margin-top:0px;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .rss-inner-container {
+    z-index: -888;
+  }
+  .RSS-CONTAINER h2 {
+    color:white;
+    font-weight: bold;
+    FONT-FAMILY: ui-sans-serif;
+  }
+  .RSS-CONTAINER p {
+    color:white;
+    font-size:16px;
+  }
+  .hidden {
+    display:none;
+  }
+  #rss-img {
+    max-width:94%;
+    max-height:190px;
+    margin:3%;
+    opacity:1 !important;
+  }
+  .reference-box{
+    width:50%;
+    float:left;
+    text-align: center;
+  }
+  .reference-box img {
+     margin-top: 2.1vw;
+     margin-bottom: 2.1vw;
+    border-radius: 4px !important; 
+    padding: 5px !important; 
+    width: 150px !important; 
+    height:150px !important;
+    border : none !important;
+  }
+  @media only screen and (max-width:768px){
+    .reference-box img {
+      width: 100px !important;
+      height: 100px !important;
+    }
+  }
+  .reference-box h4 {
+    position: center;
+    color:white;
+  }
+  .owl-carousel .item h3 {
+    margin-top: 0;
+  }
+  .modal {
+    text-align: center;
+    padding: 0!important;
+  }
+  
+  .modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px; /* Adjusts for spacing */
+  }
+  
+  .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }
+  
+  .col-center {
+    margin:0 auto;
+  }
+  
+  .fa {
+    font-size:18px !important;
+  }
+   #ContainerDivTestimonial{
+    -webkit-box-shadow: 0px 17px 78px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 17px 78px -14px rgba(0,0,0,0.75);
+    box-shadow: 0px 17px 78px -14px rgba(0,0,0,0.75);
+  }
+  #referenze{
+    background:transparent !important;
+  }
+  .referenze-title {
+    color: #000;
+    font-size:5vh;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  @media (min-width:769px){
+    .rss-mobile-container {
+      display:none;
+    }
+    .rss-desktop-container {
+      display:initial;
+    }
+  }
+  @media (max-width:768px)
+  {
+    .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+      max-height: 10000px !important;
+    }
+    .rss-mobile-container {
+      display:initial;
+    }
+    .rss-desktop-container {
+      display:none;
+    }
+  }
+  summary{
+    font-size: 20px;
+    color: #292e49;
+  }
+.polo{
+    border-radius: 20px;
+    margin-bottom: 67px;
+    box-shadow: 10px 10px 5px #dedede;
+    width: 100%;
+    height: auto;
+  
+  }
+  
+  .google-maps {
+    position: relative;
+    padding-bottom: 75%; 
+    height: 0;
+    overflow: hidden;
+  }
+  .google-maps > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    box-shadow: 10px 10px 5px #dedede;
+    height: 40% !important;
+  }
+  
+  .logo{
+        margin-left: 700px;
+      margin-bottom: 288px;
+      width: 300px;
+  }
+
+  #University{
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+  }
+  .rss-title-mobile {
+    background-color: #ccc;
+    opacity: 0.8;
+  }
+  .full-w {
+    width:100%;
+    max-width:100% !important;
+  }
+  .panel {
+    margin-top : 0px !important; 
+  }
+  
+  .mt-50 {
+    margin-top:50px;
+  }
+  .panel-heading a:after {
+    font-family:'Glyphicons Halflings';
+    content:"";
+    float: right;
+    color: grey;
+  }
+  .panel-heading a.collapsed:after {
+    content:"";
+  }
+  
+  .panel-heading a:after {
+  font-family:'Glyphicons Halflings';
+  content:"";
+  float: right;
+  color: grey;
+  }
+  .panel-heading a.collapsed:after {
+  content:"";
+  }  
+  * {
+    user-select: none;
+  }
+  .ss-university-active {
+    width:400px;
+    height:200px;
+  }
+  .ss-university-thumb {
+   width:100px;
+   height:50px;
+  }
+  .ss-university-container {
+    position: relative;
+    margin-left:1vw;
+  }
+  /* Hide the images by default */
+.uniSlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #337ab7;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: 	#e9f3fb;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 12.5%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+.column img {
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 4px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+  width: 150px; /* Set a small width */
+  margin-top:2vh;
+  margin-bottom:2vh;
+}
+
+/* Add a hover effect (blue shadow) */
+.column img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+@keyframes newImg {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.uniSlides img {
+  animation: newImg 500ms ease-in-out both;
+}
+
+.modal-dialog,
+.modal-content {
+    /* 80% of window height */
+    height: 80vh;
+}
+
+.modal-body {
+    /* 100% = dialog height, 120px = header + footer */
+    max-height: calc(80vh - 120px);
+    overflow-y: scroll;
+}

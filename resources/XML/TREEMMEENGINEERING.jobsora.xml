@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jobs>
+    <job id="1">
+        <link><![CDATA[http://www.3em.it/website/workwithus.php]]></link>
+        <name><![CDATA[Java Developer (Junior)]]></name>
+        <region><![CDATA[Pozzuoli, NA]]></region>
+        <salary><![CDATA[€20000 - €25000 per annum]]></salary>
+        <description><![CDATA[<div><h3>Java Developer (Junior)</h3><p>La risorsa individuata sarà inserita in un contesto innovativo, orientato alla formazione continua, dove avrà la possibilità di lavorare trasversalmente su diverse tecnologie e linguaggi.</p><h4>Requisiti</h4><p>Capacità di progettazione tecnica di piccola-media complessità <br> Conoscenza della teoria relazione di basi dati <br> Buona conoscenza di SQL <br> Capacità di lettura/comprensione di documentazione di analisi funzionale <br> Capacità di redazione di casi di test e di esecuzione di test <br> Buona conoscenza della piattaforma JAVA / J2EE <br>  C# <br>
+    Buona conoscenza del Framework Spring (Mvc / Boot), Hibernate <br> Conoscenza di Database, Oracle e MS SQL Server <br>  Conoscenza dei WebServices, come SOAP/Restful <br> Competenze gradite: <br>  Conoscenza del framework Angular <br> Conoscenza delle principali tecnologie di sviluppo front-end come HTLM, Javascript, JQuery, CSS, JSON, Bootstrap e Angular. js  <br> Conoscenza della piattaforma ADOBE
+    </p><h4>Titolo di studio</h4><p>Laurea di primo livello in Informatica o analoga. <br> In assenza può essere sostituita da esperienza aggiuntiva di 2 anni. <br> 
+    Se in possesso di un diploma in materie tecnico - scientifiche si prevede affiancamento formativo.</p><h4>Esperienza Pregressa</h4><p>E' gradita esperienza di almeno due anni nel ruolo.</p></div>]]>
+        </description>
+        <apply_url><![CDATA[http://www.3em.it/website/workwithus.php]]></apply_url>
+        <email><![CDATA[recruitment@3em.it]]></email>
+        <phone><![CDATA[+390815234193]]></phone>
+        <company><![CDATA[3em Engineering]]></company>
+        <pubdate>21.03.2022</pubdate>
+        <updated>21.03.2022</updated>
+        <expire>21.03.2023</expire> 
+        <jobtype><![CDATA[Full-time]]></jobtype>
+    </job>
+</jobs>

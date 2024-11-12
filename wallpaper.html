@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Wallpaper</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="gallery">
+        <a href="images/wallpaper/wallpaper1.png" download="images/wallpaper/wallpaper1.png">
+            <img src="images/wallpaper/wallpaper1.png" alt="Wallpaper 1">
+        </a>
+        <a href="images/wallpaper/wallpaper2.png" download="images/wallpaper/wallpaper2.png">
+            <img src="images/wallpaper/wallpaper2.png" alt="Wallpaper 2">
+        </a>
+        <a href="images/wallpaper/wallpaper3.png" download="images/wallpaper/wallpaper3.png">
+            <img src="images/wallpaper/wallpaper3.png" alt="Wallpaper 3">
+        </a>
+        <a href="images/wallpaper/wallpaper4.png" download="images/wallpaper/wallpaper4.png">
+            <img src="images/wallpaper/wallpaper4.png" alt="Wallpaper 4">
+        </a>
+    </div>
+
+</body>
+
+</html>

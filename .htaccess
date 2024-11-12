@@ -1,0 +1,22 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Verifica se il dominio è assets.3em.it
+    RewriteCond %{HTTP_HOST} ^assets\.3em\.it$ [NC]
+    
+    # Reindirizza tutto il traffico alla pagina di login
+    RewriteRule ^.*$ http://3em.it/gestionalePc/Login/login.html [L,R=301]
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 seconds"
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+</IfModule>
+
+Options -Indexes
