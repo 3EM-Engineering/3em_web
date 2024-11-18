@@ -98,8 +98,14 @@
                          </div>
                     </div>
                     <div class="col-md-6 v-middle">
+                         <div class="text-center mb-4">
+                              <p>Per inviare la candidatura, contattare:</p>
+                              <p><strong>recruitment@3em.it</strong></p>
+                              <button class="btn btn-outline-primary me-2" onclick="copyEmail()">Copia email</button>
+                              <button onclick="openMailClient()" class="btn btn-outline-primary">Scrivi un'email</button>
+                          </div>
                          <!-- FORM ZONE-->
-                         <form class="form-horizontal" id="frmSendMail">
+                         <form class="form-horizontal" id="frmSendMail" style="display: none">
                               <div class="form-group">
                                    <label for="txtEmail" class="col-sm-2 control-label t_email">Email: </label>
                                    <div class="col-sm-10">
@@ -184,7 +190,13 @@
                     </p>
                </div>
                <div class="row">
-                    <form class="form-horizontal" id="m-frmSendMail">
+                    <div class="text-center mb-4">
+                         <p>Per inviare la candidatura, contattare:</p>
+                         <p><strong>recruitment@3em.it</strong></p>
+                         <button class="btn btn-outline-primary me-2" onclick="copyEmail()">Copia email</button>
+                         <button onclick="openMailClient()" class="btn btn-primary">Scrivi un'email</button>
+                     </div>
+                    <form class="form-horizontal" id="m-frmSendMail" style="display:none">
                          <div class="form-group">
                               <label for="m_txtEmail" class="col-sm-2 control-label t_email">Email: </label>
                               <div class="col-sm-10">
@@ -276,6 +288,20 @@
      <script src="js/owl.carousel.min.js"></script>
      <script src="js/smoothscroll.js"></script>
      <script>document.onLoad += Initialize();</script>
+     <script>
+          function copyEmail() {
+            const email = 'recruitment@3em.it';
+            navigator.clipboard.writeText(email).then(() => {
+                alert('Indirizzo email copiato negli appunti!');
+            });
+        }
+
+        function openMailClient() {
+            const subject = encodeURIComponent('Candidatura spontanea');
+            const body = encodeURIComponent('Gentile 3EM,\n\nVorrei candidarmi per eventuali posizioni aperte.\n\nCordiali saluti,\n[Il tuo nome]');
+            window.location.href = `mailto:recruitment@3em.it?subject=${subject}&body=${body}`;
+        }
+     </script>
 </body>
 
 
