@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Imposta un ritardo per l'animazione
   setTimeout(() => {
     container.classList.add("active");
-  }, 2000); // Cambia layout dopo 2 secondi
+  }, 1000); // Cambia layout dopo 2 secondi
 });
 
 function navBarItemClick(e) {
