@@ -591,3 +591,63 @@ footer a:hover {
     background-position: 80%;
   }
 }
+
+.svg_cont {
+  position: absolute;
+  z-index: 99;
+  width: 400px;
+}
+.svg-wrapper {
+  transition: all 1s ease-in-out;
+  position: relative;
+}
+
+.svg-1 {
+  top: 0;
+  left: 0;
+
+  transition: all 1000ms ease;
+}
+
+.svg-2 {
+  display: flex;
+  top: -20px;
+  left: 165px;
+  position: relative;
+
+  transition: all 1000ms ease;
+}
+.active .svg-2 {
+  top: 10px;
+  left: 0px;
+}
+
+#logo_svg_bottom {
+  height: 20px !important;
+  transition: all 1000ms ease;
+}
+.active #logo_svg_bottom {
+  height: 39px !important;
+}
+#logo_svg_top {
+  width: 155px;
+  transition: all 1000ms ease;
+}
+.active #logo_svg_top {
+  width: 100%;
+}
+
+#svg_red_dot {
+  margin-right: 10px;
+  height: 10px;
+  transition: all 1000ms ease;
+}
+.active #svg_red_dot {
+  height: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .svg_cont {
+    scale: 0.5;
+  }
+}

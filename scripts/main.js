@@ -30,6 +30,15 @@ document.addEventListener("scroll", (event) => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.querySelector(".svg_cont");
+
+  // Imposta un ritardo per l'animazione
+  setTimeout(() => {
+    container.classList.add("active");
+  }, 1000); // Cambia layout dopo 2 secondi
+});
+
 function navBarItemClick(e) {
   document.documentElement.style.scrollBehavior = "auto";
   navbarBtnClose.click();
