@@ -32,10 +32,12 @@ document.addEventListener("scroll", (event) => {
 
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.querySelector(".svg_cont");
+  const svg_subtitle = document.querySelector(".svg-3");
 
   // Imposta un ritardo per l'animazione
   setTimeout(() => {
     container.classList.add("active");
+    svg_subtitle.classList.add("active");
   }, 1000); // Cambia layout dopo 2 secondi
 });
 
