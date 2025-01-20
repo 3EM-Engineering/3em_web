@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Example</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #3a4cce 0%, #6a79d4 100%);
+        overflow-x: hidden;
+      }
+      .full-screen {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px;
+        animation: fadeIn 0.5s ease forwards;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .card {
+        background: #fff;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+        animation: fadeIn 0.5s ease forwards;
+      }
+      h1,
+      h2,
+      h3,
+      p,
+      label {
+        color: #333;
+      }
+      h1,
+      h2 {
+        font-weight: 600;
+      }
+      p {
+        font-size: 1rem;
+      }
+      .btn {
+        border-radius: 12px;
+        font-size: 1.1rem;
+        font-weight: 500;
+        transition: transform 0.1s ease;
+      }
+      .btn:active {
+        transform: scale(0.98);
+      }
+      .answer-button {
+      }
+      #question-title {
+        font-size: 1rem;
+        white-space: pre-wrap;
+      }
+      .feedback {
+        font-size: 1.2rem;
+        margin-top: 20px;
+        font-weight: 600;
+      }
+      .hidden {
+        display: none !important;
+      }
+      .emoji {
+        font-size: 2rem;
+        display: block;
+      }
+      .answer-button {
+        opacity: 0;
+        margin: 2px;
+        animation: fadeInAnswers 0.3s forwards;
+      }
+      .answer-button:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .answer-button:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .answer-button:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+      .answer-button:nth-child(4) {
+        animation-delay: 0.4s;
+      }
+      @keyframes fadeInAnswers {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .logo-container {
+        margin-bottom: 20px;
+        animation: fadeIn 0.5s ease forwards;
+      }
+      .logo-container img {
+        max-width: 120px;
+        width: 100%;
+      }
+      #score {
+        font-size: 1rem;
+        color: #666;
+        margin-bottom: 10px;
+      }
+      pre,
+      code {
+        text-align: left;
+        background: #f0f0f0;
+        padding: 10px;
+        border-radius: 10px;
+        white-space: pre-wrap;
+      }
+      @media (max-width: 400px) {
+        h1,
+        h2,
+        p {
+          font-size: 1rem;
+        }
+        .btn {
+          font-size: 1rem;
+        }
+        #question-title {
+          font-size: 1.1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="welcome-container" class="full-screen">
+      <div class="logo-container">
+        <img src="logo.svg" alt="Logo" />
+      </div>
+      <div class="card">
+        <span class="emoji">🎉</span>
+        <h1>Benvenuto al Quiz!</h1>
+        <p>
+          Rispondi correttamente a 5 domande<br />nel minor numero di tentativi
+          possibile.
+        </p>
+        <button id="start-btn" class="btn btn-primary w-100">Inizia 🚀</button>
+      </div>
+    </div>
+
+    <div id="question-container" class="full-screen hidden">
+      <div class="logo-container">
+        <img src="logo.svg" alt="Logo" />
+      </div>
+      <div class="card">
+        <div id="score">
+          Risposte corrette: <span id="correct-count"></span>/5
+        </div>
+        <span class="emoji">❓</span>
+        <div id="question-title"></div>
+        <div id="answers" class="mb-3"></div>
+        <div id="feedback" class="feedback"></div>
+        <button
+          id="next-question-btn"
+          class="btn btn-secondary w-100 hidden mt-3"
+        >
+          Continua ➡️
+        </button>
+      </div>
+    </div>
+
+    <div id="form-container" class="full-screen hidden">
+      <div class="logo-container">
+        <img src="logo.svg" alt="Logo" />
+      </div>
+      <div class="card">
+        <span class="emoji">🏆</span>
+        <h2>Complimenti! 🎉</h2>
+        <p>
+          Hai raggiunto l'obiettivo! Inserisci i tuoi dati per ricevere il tuo
+          gadget:
+        </p>
+        <form id="final-form" class="w-100">
+          <div class="mb-3 text-start">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" required />
+          </div>
+          <div class="mb-3 text-start">
+            <label for="cognome" class="form-label">Cognome</label>
+            <input type="text" class="form-control" id="cognome" required />
+          </div>
+          <div class="mb-3 text-start">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+          <button type="submit" class="btn btn-success w-100">Invia 📩</button>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      hljs.highlightAll();
+
+      const requiredCorrect = 5;
+      let correctCount = 0;
+      let attemptCount = 0;
+      let currentQuestion = null;
+      let questionsData = [];
+      let dirtyWords = [];
+
+      const welcomeContainer = document.getElementById("welcome-container");
+      const questionContainer = document.getElementById("question-container");
+      const formContainer = document.getElementById("form-container");
+      const questionTitle = document.getElementById("question-title");
+      const answersDiv = document.getElementById("answers");
+      const feedbackDiv = document.getElementById("feedback");
+      const nextQuestionBtn = document.getElementById("next-question-btn");
+      const finalForm = document.getElementById("final-form");
+      const correctCountSpan = document.getElementById("correct-count");
+
+      document.getElementById("start-btn").addEventListener("click", startQuiz);
+      nextQuestionBtn.addEventListener("click", loadQuestion);
+      finalForm.addEventListener("submit", submitForm);
+
+      document.addEventListener("visibilitychange", handleVisibilityChange);
+
+      // Carica le domande e le dirty words
+      // In un contesto reale, usa fetch:
+      questionsData = fetch("Quiz.json")
+        .then((res) => res.json())
+        .then((data) => {
+          questionsData = data;
+        });
+      dirtyWords =  fetch("DirtyWords.json")
+        .then((res) => res.json())
+        .then((data) => {
+          dirtyWords = data;
+        });
+        
+        // ite
+
+      function startQuiz() {
+        welcomeContainer.classList.add("hidden");
+        questionContainer.classList.remove("hidden");
+        correctCount = 0;
+        attemptCount = 0;
+        updateScore();
+        loadQuestion();
+      }
+
+      function loadQuestion() {
+        feedbackDiv.textContent = "";
+        nextQuestionBtn.classList.add("hidden");
+        answersDiv.innerHTML = "";
+
+        currentQuestion =
+          questionsData[Math.floor(Math.random() * questionsData.length)];
+
+        // Mostra il testo della domanda
+        // Se la domanda ha un campo code, mostralo sotto il testo in un blocco pre/code formattato
+        let questionHTML = `<div>${currentQuestion.text}</div>`;
+
+        if (currentQuestion.code && currentQuestion.code.trim() !== "") {
+          questionHTML += `
+      <pre><code class="language-javascript">${currentQuestion.code}</code></pre>
+    `;
+        }
+
+        questionTitle.innerHTML = questionHTML;
+
+        // Mescola le risposte
+        const shuffledAnswers = shuffleArray([...currentQuestion.answers]);
+        shuffledAnswers.forEach((ans) => {
+          const btn = document.createElement("button");
+          btn.classList.add(
+            "btn",
+            "btn-outline-primary",
+            "answer-button",
+            "w-100"
+          );
+          btn.textContent = ans;
+          btn.addEventListener("click", () => checkAnswer(ans));
+          answersDiv.appendChild(btn);
+        });
+
+        // Evidenzia il codice dopo averlo inserito
+        hljs.highlightAll();
+      }
+
+      function checkAnswer(selectedAnswer) {
+        attemptCount++;
+        const buttons = answersDiv.querySelectorAll("button");
+        buttons.forEach((b) => (b.disabled = true));
+
+        const correctAnswer =
+          currentQuestion.answers[currentQuestion.correctIndex];
+        if (selectedAnswer === correctAnswer) {
+          correctCount++;
+          feedbackDiv.textContent = "✅ Corretto!";
+          feedbackDiv.classList.remove("text-danger");
+          feedbackDiv.classList.add("text-success");
+        } else {
+          feedbackDiv.textContent = "❌ Errato!";
+          feedbackDiv.classList.remove("text-success");
+          feedbackDiv.classList.add("text-danger");
+        }
+
+        updateScore();
+
+        if (correctCount >= requiredCorrect) {
+          setTimeout(showForm, 1000);
+        } else {
+          nextQuestionBtn.classList.remove("hidden");
+        }
+      }
+
+      function showForm() {
+        questionContainer.classList.add("hidden");
+        formContainer.classList.remove("hidden");
+      }
+
+      async function submitForm(event) {
+        event.preventDefault();
+        const nome = document.getElementById("nome").value.toLowerCase();
+        const cognome = document.getElementById("cognome").value.toLowerCase();
+        const email = document.getElementById("email").value.toLowerCase();
+
+        // Controllo parolacce nei campi
+        if (
+          Array.isArray(dirtyWords) &&
+          dirtyWords.some((word) => {
+            return (
+              nome.includes(word.toLowerCase()) ||
+              cognome.includes(word.toLowerCase()) ||
+              email.includes(word.toLowerCase())
+            );
+          })
+        ) {
+          alert(
+            "Hai utilizzato parole non consentite. Per favore, inserisci dati validi."
+          );
+          return;
+        }
+        
+
+        fetch("https://tstest.3em.it:4433/api/registrazioneEvento/create", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            nome,
+            cognome,
+            email,
+            score: attemptCount,
+          }),
+        });
+
+        alert("Dati inviati! Grazie per aver partecipato ✨");
+        window.location.href = "https://3em.it";
+      }
+
+      function updateScore() {
+        correctCountSpan.textContent = correctCount;
+      }
+
+      function shuffleArray(array) {
+        let currentIndex = array.length,
+          randomIndex;
+        while (currentIndex !== 0) {
+          randomIndex = Math.floor(Math.random() * currentIndex);
+          currentIndex--;
+          [array[currentIndex], array[randomIndex]] = [
+            array[randomIndex],
+            array[currentIndex],
+          ];
+        }
+        return array;
+      }
+
+      function handleVisibilityChange() {
+        if (document.visibilityState === "hidden") {
+          // Resetta il quiz
+          correctCount = 0;
+          attemptCount = 0;
+          alert(
+            "Non barare! Uscire dalla pagina ha fatto resettare il tuo contatore."
+          );
+          // Torna alla welcome
+          questionContainer.classList.add("hidden");
+          formContainer.classList.add("hidden");
+          welcomeContainer.classList.remove("hidden");
+        }
+      }
+    </script>
+  </body>
+</html>

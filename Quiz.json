@@ -1,0 +1,651 @@
+[
+    {
+        "id": 1,
+        "difficulty": "easy",
+        "text": "In C++, quale comando usi per stampare la frase 'Hello World' a schermo?",
+        "code": "",
+        "answers": [
+            "cout << \"Hello World\";",
+            "System.out.println(\"Hello World\");",
+            "print(\"Hello World\");",
+            "echo \"Hello World\";"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 2,
+        "difficulty": "easy",
+        "text": "Cosa stampa il seguente codice in Java?",
+        "code": "public class Test {\n  public static void main(String[] args) {\n    System.out.println(\"Hello\");\n  }\n}",
+        "answers": [
+            "Hello",
+            "Errore di compilazione",
+            "Compila ma non stampa nulla",
+            "Stampa 'null'"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 3,
+        "difficulty": "easy",
+        "text": "In C++, quale tipo di dato useresti per memorizzare un numero intero?",
+        "code": "",
+        "answers": [
+            "int",
+            "double",
+            "float",
+            "bool"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 4,
+        "difficulty": "easy",
+        "text": "In Java, quale parola chiave è usata per dichiarare una classe?",
+        "code": "",
+        "answers": [
+            "class",
+            "Class",
+            "struct",
+            "program"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 5,
+        "difficulty": "easy",
+        "text": "Cosa esce dal seguente codice in C++?",
+        "code": "int x = 5;\nx = x + 2;\ncout << x << endl;",
+        "answers": [
+            "7",
+            "5",
+            "Errore di compilazione",
+            "Non stampa nulla"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 6,
+        "difficulty": "easy",
+        "text": "In Java, come dichiari un array di interi con una dimensione di 5 elementi?",
+        "code": "",
+        "answers": [
+            "int[] numeri = new int[5];",
+            "int numeri = {5};",
+            "int numeri[5];",
+            "array<int> numeri(5);"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 7,
+        "difficulty": "easy",
+        "text": "In C++, quale libreria include gli oggetti cout e cin?",
+        "code": "",
+        "answers": [
+            "iostream",
+            "stdio",
+            "string",
+            "math"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 8,
+        "difficulty": "easy",
+        "text": "Cosa esce dal seguente codice in Java?",
+        "code": "int x = 10;\nx = x * 2;\nSystem.out.println(x);",
+        "answers": [
+            "20",
+            "10",
+            "Errore di compilazione",
+            "Non stampa nulla"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 9,
+        "difficulty": "easy",
+        "text": "In C++, quale operatore è usato per leggere input da tastiera?",
+        "code": "",
+        "answers": [
+            ">>",
+            "<<",
+            "=>",
+            "<-"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 10,
+        "difficulty": "easy",
+        "text": "In Java, quale metodo della classe String restituisce la lunghezza della stringa?",
+        "code": "",
+        "answers": [
+            "length()",
+            "size()",
+            "count()",
+            "strlen()"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 11,
+        "difficulty": "medium",
+        "text": "Cosa stampa il seguente codice in C++?",
+        "code": "int a = 5, b = 3;\ncout << (a > b ? \"Maggiore\" : \"Minore\") << endl;",
+        "answers": [
+            "Maggiore",
+            "Minore",
+            "Errore di compilazione",
+            "5"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 12,
+        "difficulty": "medium",
+        "text": "In Java, quale tipo di dato useresti per un numero a virgola mobile?",
+        "code": "",
+        "answers": [
+            "double",
+            "int",
+            "char",
+            "boolean"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 13,
+        "difficulty": "medium",
+        "text": "Quale valore restituisce il seguente codice in Java?",
+        "code": "String s1 = \"Ciao\";\nString s2 = \"Ciao\";\nSystem.out.println(s1.equals(s2));",
+        "answers": [
+            "true",
+            "false",
+            "Errore di compilazione",
+            "NullPointerException"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 14,
+        "difficulty": "medium",
+        "text": "In C++, quale ciclo viene eseguito almeno una volta?",
+        "code": "",
+        "answers": [
+            "do-while",
+            "while",
+            "for",
+            "if"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 15,
+        "difficulty": "hard",
+        "text": "Cosa esce dal seguente codice in C++?",
+        "code": "int a = 3;\ndo {\n  a++;\n} while (a < 5);\ncout << a << endl;",
+        "answers": [
+            "5",
+            "4",
+            "3",
+            "Errore di compilazione"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 16,
+        "difficulty": "easy",
+        "text": "In Java, quale parola chiave usi per dichiarare una costante?",
+        "code": "",
+        "answers": [
+            "final",
+            "const",
+            "constant",
+            "immutable"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 17,
+        "difficulty": "easy",
+        "text": "Cosa esce dal seguente codice in Java?",
+        "code": "int x = 10;\nx -= 3;\nSystem.out.println(x);",
+        "answers": [
+            "7",
+            "10",
+            "3",
+            "Errore di compilazione"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 18,
+        "difficulty": "medium",
+        "text": "In C++, cosa indica la parola chiave 'virtual'?",
+        "code": "",
+        "answers": [
+            "Permette l'override di metodi nelle classi derivate",
+            "Crea un puntatore virtuale",
+            "Definisce una funzione statica",
+            "Indica che un oggetto è dinamico"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 19,
+        "difficulty": "medium",
+        "text": "Cosa esce dal seguente codice in C++?",
+        "code": "int a = 4, b = 7;\ncout << a + b * 2 << endl;",
+        "answers": [
+            "18",
+            "22",
+            "11",
+            "Errore di compilazione"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 20,
+        "difficulty": "medium",
+        "text": "In Java, cosa fa il metodo 'split()' della classe String?",
+        "code": "",
+        "answers": [
+            "Divide una stringa in base a un delimitatore",
+            "Rimuove gli spazi vuoti da una stringa",
+            "Sostituisce una parte della stringa",
+            "Verifica se la stringa è vuota"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 21,
+        "difficulty": "medium",
+        "text": "Cosa esce dal seguente codice in Java?",
+        "code": "String str = \"123\";\nint num = Integer.parseInt(str);\nSystem.out.println(num + 10);",
+        "answers": [
+            "133",
+            "12310",
+            "Errore di runtime",
+            "Errore di compilazione"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 22,
+        "difficulty": "hard",
+        "text": "In C++, quale funzione viene chiamata automaticamente alla distruzione di un oggetto?",
+        "code": "",
+        "answers": [
+            "Distruttore",
+            "Costruttore",
+            "Deallocatore",
+            "Finalize"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 23,
+        "difficulty": "hard",
+        "text": "Cosa esce dal seguente codice in C++?",
+        "code": "class A {\npublic:\n  A() { cout << \"Costruttore\" << endl; }\n  ~A() { cout << \"Distruttore\" << endl; }\n};\nint main() {\n  A obj;\n  return 0;\n}",
+        "answers": [
+            "Costruttore\nDistruttore",
+            "Costruttore",
+            "Distruttore",
+            "Errore di compilazione"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 24,
+        "difficulty": "hard",
+        "text": "In Java, cosa rappresenta la parola chiave 'super'?",
+        "code": "",
+        "answers": [
+            "Un riferimento alla classe base",
+            "Un riferimento all'oggetto corrente",
+            "Un metodo statico",
+            "Una funzione per gestire eccezioni"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 25,
+        "difficulty": "hard",
+        "text": "Cosa esce dal seguente codice in Java?",
+        "code": "class Base {\n  void display() { System.out.println(\"Base\"); }\n}\nclass Derived extends Base {\n  void display() { System.out.println(\"Derived\"); }\n}\npublic class Test {\n  public static void main(String[] args) {\n    Base obj = new Derived();\n    obj.display();\n  }\n}",
+        "answers": [
+            "Derived",
+            "Base",
+            "Errore di compilazione",
+            "Errore di runtime"
+        ],
+        "correctIndex": 0
+    },{
+        "id": 26,
+        "difficulty": "medium",
+        "text": "Cosa esce dal seguente codice in C++?",
+        "code": "int x = 3;\nint y = 4;\ncout << x * y + y / x << endl;",
+        "answers": [
+            "13",
+            "14",
+            "Errore di compilazione",
+            "7"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 27,
+        "difficulty": "medium",
+        "text": "In Java, quale parola chiave è usata per creare un metodo che può essere chiamato senza istanziare un oggetto?",
+        "code": "",
+        "answers": [
+            "static",
+            "abstract",
+            "final",
+            "default"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 28,
+        "difficulty": "medium",
+        "text": "Cosa esce dal seguente codice in Java?",
+        "code": "int[] nums = {1, 2, 3};\nSystem.out.println(nums[1]);",
+        "answers": [
+            "2",
+            "1",
+            "3",
+            "Errore di runtime"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 29,
+        "difficulty": "medium",
+        "text": "In C++, quale risultato produce il seguente codice?",
+        "code": "int a = 10, b = 3;\ncout << a % b << endl;",
+        "answers": [
+            "1",
+            "3",
+            "10",
+            "Errore di compilazione"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 30,
+        "difficulty": "medium",
+        "text": "In Java, cosa restituisce il seguente codice?",
+        "code": "String str = \"Test\";\nSystem.out.println(str.charAt(2));",
+        "answers": [
+            "s",
+            "T",
+            "t",
+            "Errore di runtime"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 31,
+        "difficulty": "medium",
+        "text": "Cosa esce dal seguente codice in C++?",
+        "code": "for (int i = 0; i < 3; i++) {\n  cout << i << \" \";\n}",
+        "answers": [
+            "0 1 2",
+            "0 1 2 3",
+            "1 2 3",
+            "Errore di compilazione"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 32,
+        "difficulty": "medium",
+        "text": "In Java, come si verifica se una stringa è vuota?",
+        "code": "",
+        "answers": [
+            "str.isEmpty()",
+            "str == \"\"",
+            "str.equals(\"\")",
+            "str.empty()"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 33,
+        "difficulty": "medium",
+        "text": "Cosa stampa il seguente codice in C++?",
+        "code": "int x = 5;\nif (x > 3) {\n  cout << \"Grande\";\n} else {\n  cout << \"Piccolo\";\n}",
+        "answers": [
+            "Grande",
+            "Piccolo",
+            "Errore di compilazione",
+            "Non stampa nulla"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 34,
+        "difficulty": "medium",
+        "text": "Cosa stampa il seguente codice in Java?",
+        "code": "int x = 7;\nif (x % 2 == 0) {\n  System.out.println(\"Pari\");\n} else {\n  System.out.println(\"Dispari\");\n}",
+        "answers": [
+            "Dispari",
+            "Pari",
+            "Errore di runtime",
+            "Non stampa nulla"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 35,
+        "difficulty": "medium",
+        "text": "Cosa esce dal seguente codice in C++?",
+        "code": "int a = 5;\nint b = ++a;\ncout << a << \" \" << b << endl;",
+        "answers": [
+            "6 6",
+            "5 5",
+            "5 6",
+            "6 5"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 36,
+        "difficulty": "medium",
+        "text": "In Java, quale metodo della classe ArrayList restituisce il numero di elementi contenuti?",
+        "code": "",
+        "answers": [
+            "size()",
+            "length()",
+            "count()",
+            "capacity()"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 37,
+        "difficulty": "medium",
+        "text": "Cosa esce dal seguente codice in Java?",
+        "code": "String str = \"Hello\";\nSystem.out.println(str.substring(1, 4));",
+        "answers": [
+            "ell",
+            "Hello",
+            "lo",
+            "Errore di runtime"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 38,
+        "difficulty": "medium",
+        "text": "Cosa esce dal seguente codice in C++?",
+        "code": "int a = 2;\nswitch (a) {\n  case 1: cout << \"Uno\"; break;\n  case 2: cout << \"Due\"; break;\n  default: cout << \"Altro\";\n}",
+        "answers": [
+            "Due",
+            "Uno",
+            "Altro",
+            "Errore di compilazione"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 39,
+        "difficulty": "medium",
+        "text": "Cosa esce dal seguente codice in Java?",
+        "code": "int x = 10;\ndo {\n  x -= 2;\n} while (x > 5);\nSystem.out.println(x);",
+        "answers": [
+            "4",
+            "6",
+            "10",
+            "Errore di compilazione"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 40,
+        "difficulty": "medium",
+        "text": "In C++, quale valore stampa il seguente codice?",
+        "code": "int a = 8, b = 3;\ncout << a / b << endl;",
+        "answers": [
+            "2",
+            "2.666",
+            "3",
+            "Errore di compilazione"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 41,
+        "difficulty": "medium",
+        "text": "In Java, cosa restituisce il metodo 'indexOf()' chiamato su una stringa?",
+        "code": "",
+        "answers": [
+            "La posizione della prima occorrenza di un carattere",
+            "Il numero totale di caratteri nella stringa",
+            "Il carattere presente in una posizione",
+            "Un'eccezione se il carattere non esiste"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 42,
+        "difficulty": "medium",
+        "text": "Cosa esce dal seguente codice in C++?",
+        "code": "int x = 5;\nx += 3;\nx -= 2;\ncout << x << endl;",
+        "answers": [
+            "6",
+            "8",
+            "5",
+            "Errore di compilazione"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 43,
+        "difficulty": "medium",
+        "text": "In Java, cosa fa il metodo 'toUpperCase()' della classe String?",
+        "code": "",
+        "answers": [
+            "Converte tutti i caratteri in maiuscolo",
+            "Rimuove tutti i caratteri non alfabetici",
+            "Aggiunge una stringa in maiuscolo",
+            "Sostituisce i caratteri speciali con spazi"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 44,
+        "difficulty": "medium",
+        "text": "Cosa esce dal seguente codice in Java?",
+        "code": "int[] nums = {1, 2, 3, 4};\nSystem.out.println(nums.length);",
+        "answers": [
+            "4",
+            "5",
+            "Errore di compilazione",
+            "Non stampa nulla"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 45,
+        "difficulty": "medium",
+        "text": "Cosa esce dal seguente codice in C++?",
+        "code": "int x = 7;\nif (x == 5) {\n  cout << \"Cinque\";\n} else {\n  cout << \"Non cinque\";\n}",
+        "answers": [
+            "Non cinque",
+            "Cinque",
+            "Errore di compilazione",
+            "Non stampa nulla"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 46,
+        "difficulty": "medium",
+        "text": "Cosa fa il seguente codice in Java?",
+        "code": "for (int i = 1; i <= 3; i++) {\n  System.out.print(i);\n}",
+        "answers": [
+            "123",
+            "0123",
+            "Errore di compilazione",
+            "Non stampa nulla"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 47,
+        "difficulty": "medium",
+        "text": "In C++, cosa indica l'operatore '!='?",
+        "code": "",
+        "answers": [
+            "Diverso da",
+            "Assegnazione",
+            "Maggiore o uguale a",
+            "Nessun significato, genera un errore"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 48,
+        "difficulty": "medium",
+        "text": "Cosa esce dal seguente codice in Java?",
+        "code": "int a = 5;\nint b = 2;\nSystem.out.println(a % b);",
+        "answers": [
+            "1",
+            "2",
+            "5",
+            "Errore di compilazione"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 49,
+        "difficulty": "medium",
+        "text": "In C++, cosa stampa il seguente codice?",
+        "code": "int a = 4;\nswitch (a) {\n  case 3: cout << \"Tre\";\n  case 4: cout << \"Quattro\";\n  default: cout << \"Default\";\n}",
+        "answers": [
+            "QuattroDefault",
+            "Quattro",
+            "Errore di compilazione",
+            "Non stampa nulla"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "id": 50,
+        "difficulty": "medium",
+        "text": "Cosa stampa il seguente codice in Java?",
+        "code": "int x = 0;\nwhile (x < 3) {\n  System.out.print(x);\n  x++;\n}",
+        "answers": [
+            "012",
+            "123",
+            "Errore di runtime",
+            "Non stampa nulla"
+        ],
+        "correctIndex": 0
+    }
+]

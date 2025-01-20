@@ -90,8 +90,9 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
             <li class="nav-item" onclick="navBarItemClick()">
               <a class="nav-link active" aria-current="page" href="#doveSiamo">Dove Siamo</a>
             </li>
-            <li class="nav-item" onclick="navBarItemClick()">
-              <a class="nav-link active" aria-current="page" href="#contattaci">Contatti</a>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="workwithus.php">Lavora con
+                noi</a>
             </li>
             <li class="nav-item mx-3">
               <a class="nav-link active" aria-current="page" href="indexEn.php">
@@ -128,9 +129,6 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
         </li>
         <li class="nav-item mx-3">
           <a class="nav-link active" aria-current="page" href="#doveSiamo">Dove Siamo</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link active" aria-current="page" href="#contattaci">Contatti</a>
         </li>
         <li class="nav-item mx-3">
           <a class="nav-link active" aria-current="page" href="workwithus.php">Lavora con
@@ -649,7 +647,7 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
     <div class="col-12 section-mini-title">Collaborazioni</div>
   </section> -->
 
-  <section class="container my-5 px-4 px-md-0" id="contatti-e-sedi">
+  <section class="container my-5 px-4 px-md-0" id="doveSiamo">
   <div class=" mb-4">
     <h2 class="section-title fw-bold">Dove siamo e come contattarci</h2>
     <p class="text-muted">Trova le nostre sedi e contattaci facilmente. Siamo sempre a tua disposizione!</p>
