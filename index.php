@@ -361,11 +361,12 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
         </div>
       </div>
       <div class="svg-wrapper svg-3">
-        <span>AUTOMATION</span>
         <span class="svg-3-dot"></span>
-        <span>COMMISSIONING AND START UP</span>
+        <span>Industrial Automation</span>
         <span class="svg-3-dot"></span>
-        <span>TECHNOLOGY</span>
+        <span>Erection & System Engineering</span>
+        <span class="svg-3-dot"></span>
+        <span>IT Services</span>
       </div>
       <div class="row home-button-row" style="z-index: 99">
         <div class="col-12">
@@ -378,7 +379,7 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
     </section>
 
     <section class="container px-4 px-md-auto" id="chiSiamo">
-      <div data-aos="fade-left">
+      <div data-aossssss="fade-left">
         <div class="col-12 section-mini-title">chi siamo</div>
         <div class="row position-relative">
           <div class="col-12 section-title">ottimizziamo e velocizziamo</div>
@@ -396,7 +397,7 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
           </div>
         </div>
       </div>
-      <div data-aos="fade-right">
+      <div data-aossssss="fade-right">
         <div class="row align-items-center justify-content-center mt-5">
           <a href="#settori" class="btn-outline mx-auto col-8 col-md-5"
             >Scopri i nostri serivizi</a
@@ -441,23 +442,23 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
           investimento.
         </div>
       </div>
-      <div data-aos="fade-down">
-        <div class="row">
+      <div data-aossssss="fade-down">
+        <div class="row justify-content-center">
           <div class="col-12 section-mini-title mt-5 mb-3">
             Le figure di riferimento
           </div>
-          <div class="col-12 row">
+          <div class="col-12 row justify-content-center">
             <div
               class="team-container d-flex flex-column align-items-center justify-content-start justify-content-md-center col-6 col-md-4 mb-3"
             >
               <div class="position-relative">
                 <div class="image" style="background-color: #3a4cce">
-                  <img src="assets/img/MarcoEsposito.png" alt="" height="100" />
+                  <img src="assets/img/MarcoEsposito.png" alt="" height="50" />
                 </div>
                 <a
                   href="https://www.linkedin.com/in/marco-esposito-16397713/"
                   class="image-icon"
-                  ><i class="fa-brands fa-linkedin"></i
+                  ><i class="fa-brands fa-linkedin" style="scale: 0.6"></i
                 ></a>
               </div>
               <div class="d-flex flex-column">
@@ -465,17 +466,19 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
                 <span class="role">CEO</span>
               </div>
             </div>
+          </div>
+          <div class="col-12 row justify-content-center">
             <div
               class="team-container d-flex flex-column align-items-center justify-content-start justify-content-md-center col-6 col-md-4 mb-3"
             >
               <div class="position-relative">
                 <div class="image" style="background-color: #ce3a3a">
-                  <img src="assets/img/Antonio Leone.jpg" alt="" height="135" />
+                  <img src="assets/img/Antonio Leone.jpg" alt="" height="70" />
                 </div>
                 <a
                   href="https://www.linkedin.com/in/ingantonioleone/"
                   class="image-icon"
-                  ><i class="fa-brands fa-linkedin"></i
+                  ><i class="fa-brands fa-linkedin" style="scale: 0.6"></i
                 ></a>
               </div>
               <div class="d-flex flex-column">
@@ -489,11 +492,31 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
               class="team-container d-flex flex-column align-items-center justify-content-start justify-content-md-center col-6 col-md-4 mb-3"
             >
               <div class="position-relative">
+                <div class="image" style="background-color: #ce3a3a">
+                  <img src="assets/img/Francesca.jpg" alt="" height="50" />
+                </div>
+                <a
+                  href="https://www.linkedin.com/in/francesca-scarmozzino-38041b13b/"
+                  class="image-icon"
+                  ><i class="fa-brands fa-linkedin" style="scale: 0.6"></i
+                ></a>
+              </div>
+              <div class="d-flex flex-column">
+                <span class="name">Francesca Scarmorzino</span>
+                <span class="role">Finance & Administration Department</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 row justify-content-center">
+            <div
+              class="team-container d-flex flex-column align-items-center justify-content-start justify-content-md-center col-4 col-md-4 mb-3"
+            >
+              <div class="position-relative">
                 <div class="image" style="background-color: #3a4cce">
-                  <img src="assets/img/Gattor.jpg" alt="" height="100" />
+                  <img src="assets/img/Gattor.jpg" alt="" height="50" />
                 </div>
                 <a href="" class="image-icon"
-                  ><i class="fa-brands fa-linkedin"></i
+                  ><i class="fa-brands fa-linkedin" style="scale: 0.6"></i
                 ></a>
               </div>
               <div class="d-flex flex-column">
@@ -502,34 +525,16 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
               </div>
             </div>
             <div
-              class="team-container d-flex flex-column align-items-center justify-content-start justify-content-md-center col-6 col-md-4 mb-3"
-            >
-              <div class="position-relative">
-                <div class="image" style="background-color: #ce3a3a">
-                  <img src="assets/img/Francesca.jpg" alt="" height="100" />
-                </div>
-                <a
-                  href="https://www.linkedin.com/in/francesca-scarmozzino-38041b13b/"
-                  class="image-icon"
-                  ><i class="fa-brands fa-linkedin"></i
-                ></a>
-              </div>
-              <div class="d-flex flex-column">
-                <span class="name">Francesca Scarmorzino</span>
-                <span class="role">Finance & Administration Department</span>
-              </div>
-            </div>
-            <div
-              class="team-container d-flex flex-column align-items-center justify-content-start justify-content-md-center col-6 col-md-4 mb-3"
+              class="team-container d-flex flex-column align-items-center justify-content-start justify-content-md-center col-4 col-md-4 mb-3"
             >
               <div class="position-relative">
                 <div class="image" style="background-color: #3a4cce">
-                  <img src="assets/img/Ilaria.jpg" alt="" height="120" />
+                  <img src="assets/img/Ilaria.jpg" alt="" height="60" />
                 </div>
                 <a
                   href="https://www.linkedin.com/in/ilaria-scamardella-hrit/"
                   class="image-icon"
-                  ><i class="fa-brands fa-linkedin"></i
+                  ><i class="fa-brands fa-linkedin" style="scale: 0.6"></i
                 ></a>
               </div>
               <div class="d-flex flex-column">
@@ -538,14 +543,14 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
               </div>
             </div>
             <div
-              class="team-container d-flex flex-column align-items-center justify-content-start justify-content-md-center col-6 col-md-4 mb-3"
+              class="team-container d-flex flex-column align-items-center justify-content-start justify-content-md-center col-4 col-md-4 mb-3"
             >
               <div class="position-relative">
                 <div class="image" style="background-color: #ce3a3a">
-                  <img src="assets/img/Rita.jpg" alt="" height="160" />
+                  <img src="assets/img/Rita.jpg" alt="" height="90" />
                 </div>
                 <a href="" class="image-icon"
-                  ><i class="fa-brands fa-linkedin"></i
+                  ><i class="fa-brands fa-linkedin" style="scale: 0.6"></i
                 ></a>
               </div>
               <div class="d-flex flex-column">
@@ -566,7 +571,7 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
       <div class="row justify-content-start justify-content-md-center">
         <div
           class="col-12 col-md-8 col-xl-4 card-settori"
-          data-aos="fade-up-right"
+          data-aossssss="fade-up-right"
         >
           <div class="card-body bg-black">
             <div class="card-text">
@@ -751,7 +756,7 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
 
         <div
           class="col-12 col-md-8 col-xl-4 card-settori card-erection position-relative"
-          data-aos="fade-up"
+          data-aossssss="fade-up"
         >
           <a
             href="assets/certification/Certificato ISO 45001.pdf"
@@ -796,7 +801,7 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
 
         <div
           class="col-12 col-md-8 col-xl-4 card-settori"
-          data-aos="fade-up-left"
+          data-aossssss="fade-up-left"
         >
           <div class="card-body bg-black">
             <div class="card-text">
@@ -919,7 +924,7 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
     <section
       class="container px-4 px-md-auto mt-5"
       id="collaborazioni"
-      data-aos="fade-up"
+      data-aossssss="fade-up"
     >
       <div class="col-12 section-mini-title">Partner</div>
       <div class="slider">
@@ -1002,7 +1007,7 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
     <section
       class="container px-4 px-md-auto mt-5"
       id="collaborazioni"
-      data-aos="fade-up"
+      data-aossssss="fade-up"
     >
       <div class="col-12 section-mini-title">University</div>
       <div class="slider">
@@ -1126,7 +1131,7 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
     <section
       class="container px-4 px-md-auto mt-5"
       id="sponsor"
-      data-aos="fade-up"
+      data-aossssss="fade-up"
     >
       <div class="col-12 section-mini-title">Sponsor</div>
       <div
@@ -2820,7 +2825,7 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
 
       <div class="row g-5">
         <!-- Colonna con sedi -->
-        <div class="col-12 col-md-5" data-aos="fade-right">
+        <div class="col-12 col-md-5" data-aossssss="fade-right">
           <div class="shadow-sm p-4 rounded-3 bg-white">
             <h3 class="fw-bold mb-3">Le Nostre Sedi</h3>
             <div class="mb-4">
@@ -2868,7 +2873,7 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
         </div>
 
         <!-- Colonna con mappa e immagine -->
-        <div class="col-12 col-md-7" data-aos="fade-left">
+        <div class="col-12 col-md-7" data-aossssss="fade-left">
           <div class="row g-4">
             <div class="col-12">
               <iframe
