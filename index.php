@@ -404,15 +404,15 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
           >
         </div>
         <div class="row cs-data my-5 px-5">
-          <div class="data col-6 col-md-4">
+          <div class="data col-12 col-md-4">
             <div class="position-relative">
-              <span class="data-perc">20%</span>
+              <span class="data-perc">40%</span>
               <canvas
-                id="myChart1"
+                id="myChart2"
                 style="width: 100%; max-width: 700px"
               ></canvas>
             </div>
-            <span>IT Service</span>
+            <span>Industrial Automation</span>
           </div>
           <div class="data col-6 col-md-4">
             <div class="position-relative">
@@ -424,15 +424,15 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
             </div>
             <span>Erection & System Engineering</span>
           </div>
-          <div class="data col-12 col-md-4">
+          <div class="data col-6 col-md-4">
             <div class="position-relative">
-              <span class="data-perc">40%</span>
+              <span class="data-perc">20%</span>
               <canvas
-                id="myChart2"
+                id="myChart1"
                 style="width: 100%; max-width: 700px"
               ></canvas>
             </div>
-            <span>Industrial Automation</span>
+            <span>IT Service</span>
           </div>
         </div>
         <div class="col-12 mt-5">

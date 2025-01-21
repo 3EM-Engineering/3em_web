@@ -350,6 +350,7 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
         </div>
       </div>
       <div class="svg-wrapper svg-3">
+        <span class="svg-3-dot"></span>
         <span>AUTOMATION</span>
         <span class="svg-3-dot"></span>
         <span>COMMISSIONING AND START UP</span>
@@ -389,15 +390,15 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
         >
       </div>
       <div class="row cs-data my-5 px-5">
-        <div class="data col-6 col-md-4">
+        <div class="data col-12 col-md-4">
           <div class="position-relative">
-            <span class="data-perc">20%</span>
+            <span class="data-perc">40%</span>
             <canvas
-              id="myChart1"
+              id="myChart2"
               style="width: 100%; max-width: 700px"
             ></canvas>
           </div>
-          <span>IT Service</span>
+          <span>Industrial Automation</span>
         </div>
         <div class="data col-6 col-md-4">
           <div class="position-relative">
@@ -409,15 +410,15 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
           </div>
           <span>Erection & System Engineering</span>
         </div>
-        <div class="data col-12 col-md-4">
+        <div class="data col-6 col-md-4">
           <div class="position-relative">
-            <span class="data-perc">40%</span>
+            <span class="data-perc">20%</span>
             <canvas
-              id="myChart2"
+              id="myChart1"
               style="width: 100%; max-width: 700px"
             ></canvas>
           </div>
-          <span>Industrial Automation</span>
+          <span>IT Service</span>
         </div>
       </div>
       <div class="col-12 mt-5">
@@ -426,21 +427,19 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
         delivery and total cost certainty.
       </div>
       <div class="row">
-        <div class="col-12 section-mini-title mt-5 mb-3">
-          Le figure di riferimento
-        </div>
-        <div class="col-12 row">
+        <div class="col-12 section-mini-title mt-5 mb-3">Reference figures</div>
+        <div class="col-12 row justify-content-center">
           <div
             class="team-container d-flex flex-column align-items-center justify-content-start justify-content-md-center col-6 col-md-4 mb-3"
           >
             <div class="position-relative">
               <div class="image" style="background-color: #3a4cce">
-                <img src="assets/img/MarcoEsposito.png" alt="" height="100" />
+                <img src="assets/img/MarcoEsposito.png" alt="" height="50" />
               </div>
               <a
                 href="https://www.linkedin.com/in/marco-esposito-16397713/"
                 class="image-icon"
-                ><i class="fa-brands fa-linkedin"></i
+                ><i class="fa-brands fa-linkedin" style="scale: 0.6"></i
               ></a>
             </div>
             <div class="d-flex flex-column">
@@ -448,18 +447,19 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
               <span class="role">CEO</span>
             </div>
           </div>
+        </div>
+        <div class="col-12 row justify-content-center">
           <div
             class="team-container d-flex flex-column align-items-center justify-content-start justify-content-md-center col-6 col-md-4 mb-3"
           >
             <div class="position-relative">
               <div class="image" style="background-color: #ce3a3a">
-                <img src="assets/img/Antonio Leone.jpg" alt="" height="135" />
+                <img src="assets/img/Antonio Leone.jpg" alt="" height="70" />
               </div>
-
               <a
                 href="https://www.linkedin.com/in/ingantonioleone/"
                 class="image-icon"
-                ><i class="fa-brands fa-linkedin"></i
+                ><i class="fa-brands fa-linkedin" style="scale: 0.6"></i
               ></a>
             </div>
             <div class="d-flex flex-column">
@@ -471,11 +471,31 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
             class="team-container d-flex flex-column align-items-center justify-content-start justify-content-md-center col-6 col-md-4 mb-3"
           >
             <div class="position-relative">
+              <div class="image" style="background-color: #ce3a3a">
+                <img src="assets/img/Francesca.jpg" alt="" height="50" />
+              </div>
+              <a
+                href="https://www.linkedin.com/in/francesca-scarmozzino-38041b13b/"
+                class="image-icon"
+                ><i class="fa-brands fa-linkedin" style="scale: 0.6"></i
+              ></a>
+            </div>
+            <div class="d-flex flex-column">
+              <span class="name">Francesca Scarmorzino</span>
+              <span class="role">Finance & Administration Department</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 row justify-content-center">
+          <div
+            class="team-container d-flex flex-column align-items-center justify-content-start justify-content-md-center col-4 col-md-4 mb-3"
+          >
+            <div class="position-relative">
               <div class="image" style="background-color: #3a4cce">
-                <img src="assets/img/Gattor.jpg" alt="" height="100" />
+                <img src="assets/img/Gattor.jpg" alt="" height="50" />
               </div>
               <a href="" class="image-icon"
-                ><i class="fa-brands fa-linkedin"></i
+                ><i class="fa-brands fa-linkedin" style="scale: 0.6"></i
               ></a>
             </div>
             <div class="d-flex flex-column">
@@ -484,34 +504,16 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
             </div>
           </div>
           <div
-            class="team-container d-flex flex-column align-items-center justify-content-start justify-content-md-center col-6 col-md-4 mb-3"
-          >
-            <div class="position-relative">
-              <div class="image" style="background-color: #ce3a3a">
-                <img src="assets/img/Francesca.jpg" alt="" height="100" />
-              </div>
-              <a
-                href="https://www.linkedin.com/in/francesca-scarmozzino-38041b13b/"
-                class="image-icon"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-            </div>
-            <div class="d-flex flex-column">
-              <span class="name">Francesca Scarmorzino</span>
-              <span class="role">Finance & Administration Department</span>
-            </div>
-          </div>
-          <div
-            class="team-container d-flex flex-column align-items-center justify-content-start justify-content-md-center col-6 col-md-4 mb-3"
+            class="team-container d-flex flex-column align-items-center justify-content-start justify-content-md-center col-4 col-md-4 mb-3"
           >
             <div class="position-relative">
               <div class="image" style="background-color: #3a4cce">
-                <img src="assets/img/Ilaria.jpg" alt="" height="120" />
+                <img src="assets/img/Ilaria.jpg" alt="" height="60" />
               </div>
               <a
                 href="https://www.linkedin.com/in/ilaria-scamardella-hrit/"
                 class="image-icon"
-                ><i class="fa-brands fa-linkedin"></i
+                ><i class="fa-brands fa-linkedin" style="scale: 0.6"></i
               ></a>
             </div>
             <div class="d-flex flex-column">
@@ -520,14 +522,14 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
             </div>
           </div>
           <div
-            class="team-container d-flex flex-column align-items-center justify-content-start justify-content-md-center col-6 col-md-4 mb-3"
+            class="team-container d-flex flex-column align-items-center justify-content-start justify-content-md-center col-4 col-md-4 mb-3"
           >
             <div class="position-relative">
               <div class="image" style="background-color: #ce3a3a">
-                <img src="assets/img/Rita.jpg" alt="" height="160" />
+                <img src="assets/img/Rita.jpg" alt="" height="90" />
               </div>
               <a href="" class="image-icon"
-                ><i class="fa-brands fa-linkedin"></i
+                ><i class="fa-brands fa-linkedin" style="scale: 0.6"></i
               ></a>
             </div>
             <div class="d-flex flex-column">
