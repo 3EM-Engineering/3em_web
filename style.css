@@ -594,7 +594,6 @@ footer a:hover {
   position: absolute;
   z-index: 99;
   width: 400px;
-  transform: translateY(-150%);
 }
 .svg-wrapper {
   transition: all 1s ease-in-out;
@@ -658,7 +657,6 @@ footer a:hover {
   transition: all 300ms ease;
   transition-delay: 800ms;
   scale: 0.9;
-  transform: translateY(-200%);
 }
 .svg-3.active {
   opacity: 1;
@@ -675,6 +673,10 @@ footer a:hover {
 @media screen and (max-width: 600px) {
   .svg_cont {
     scale: 0.5;
+    transform: translateY(-150%);
+  }
+  .svg-3 {
+    transform: translateY(-200%);
   }
   .svg-3.active {
     width: 100%;
