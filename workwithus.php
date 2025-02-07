@@ -51,9 +51,13 @@
         <a href="http://www.3em.it" class="btn btn-outline-primary">Home</a>
       </div>
     </nav>
-
+      <div id="alertMessage" class="alert alert-primary lilacColour position-fixed start-50 translate-middle-x w-50 text-center mt-2" style="display: none;" role="alert">
+        Indirizzo email copiato negli appunti!
+      </div>
     <!-- Main Content -->
     <div class="container mt-5 w-75">
+     
+
       <h1 class="mb-4 text-start lilacColour">Lavora con noi</h1>
       <p class="fw-medium">
         3EM ENGINEERING si presenta come System Integrator e fornitore di
@@ -91,12 +95,25 @@
 
     <!-- Script Personalizzato -->
     <script>
-      function copyEmail() {
-        const email = "recruitment@3em.it";
-        navigator.clipboard.writeText(email).then(() => {
-          alert("Indirizzo email copiato negli appunti!");
-        });
-      }
+ function copyEmail() {
+    const email = "recruitment@3em.it";
+    navigator.clipboard.writeText(email).then(() => {
+      const alert = document.getElementById('alertMessage');
+      
+      // Mostra l'alert con effetto fade-in
+      alert.style.display = 'block';
+      alert.classList.add('fade', 'show'); // Aggiunge le classi fade e show per mostrare l'alert
+
+      // Dopo 3 secondi, inizia la transizione per nascondere l'alert con fade-out
+      setTimeout(() => {
+        alert.classList.remove('show'); // Rimuove la classe 'show' per il fade-out
+        // Dopo il fade-out, nasconde completamente l'alert dopo 0.5 secondi
+        setTimeout(() => {
+          alert.style.display = 'none'; // Nasconde l'alert completamente dopo la transizione
+        }, 500); // Tempo per completare il fade-out
+      }, 3000); // Dopo 3 secondi, inizia la transizione di scomparsa
+    });
+  }
 
       function loadJobApplications() {
         fetch("https://tstest.3em.it:4433/api/JobApplication")
