@@ -55,7 +55,7 @@ a {
 }
 .btn-outline:hover,
 .btn-outline:focus {
-  border: 5px solid var(--blu);
+  outline: 5px solid var(--blu);
   border-radius: 5rem;
   padding: calc(0.5rem - 3px) 1rem;
   display: block;
@@ -470,16 +470,11 @@ form textarea {
   border-radius: 0.3rem;
 }
 /* FOOTER */
-footer {
-  background-color: var(--blu);
-  margin-top: 4rem;
-}
 footer a {
-  color: white !important;
-  aspect-ratio: 1/1;
+  color: var(--blu) !important;
 }
 footer a:hover {
-  color: var(--blu) !important;
+  color: #0d6dfd !important;
 }
 
 .carousel-inner {

@@ -27,7 +27,7 @@
       margin-bottom: 1rem;
     }
 
-    .lilacColour {
+    .blueColor {
       color: #3a4cce;
       border-color: #3a4cce;
     }
@@ -54,7 +54,7 @@
     }
 
     .btn-outline {
-      outline: 2px solid #3a4cce;
+      border: 2px solid #3a4cce;
       border-radius: 5rem;
       padding: 0.5rem 1rem;
       display: block;
@@ -64,7 +64,7 @@
 
     .btn-outline:hover,
     .btn-outline:focus {
-      border: 5px solid #3a4cce;
+      outline: 5px solid #3a4cce;
       border-radius: 5rem;
       padding: calc(0.5rem - 3px) 1rem;
       display: block;
@@ -79,7 +79,7 @@
   </style>
 </head>
 
-<body onload="loadJobApplications()">
+<body class="overflow-x-hidden" onload="loadJobApplications()">
   <!-- Navbar -->
   <nav class="navbar fixed-top" id="mobileNav" oncontextmenu="return false">
     <div class="container-fluid">
@@ -168,7 +168,7 @@
   </nav>
   <div>
     <div id="alertMessage"
-      class="alert alert-primary lilacColour position-fixed start-50 translate-middle-x w-50 text-center mt-2"
+      class="alert alert-primary blueColor position-fixed start-50 translate-middle-x w-50 text-center mt-2"
       style="display: none; z-index: 1031" role="alert">
       Indirizzo email copiato negli appunti!
     </div>
@@ -176,7 +176,7 @@
     <div class="container mt-5 w-75 pt-5">
 
 
-      <h1 class="mb-4 text-start lilacColour">Lavora con noi</h1>
+      <h1 class="mb-4 text-start blueColor">Lavora con noi</h1>
       <p class="fw-medium">
         3EM ENGINEERING si presenta come System Integrator e fornitore di
         soluzioni globali per i processi industriali, combinando qualità,
@@ -191,14 +191,14 @@
 
       <div class="mt-5 d-flex justify-content-center align-items-center">
         <p class="fw-medium me-2 mt-3">Contattaci</p>
-        <span class="fw-medium ms-2 me-2 lilacColour">recruitment@3em.it</span>
-        <button onclick="copyEmail()" class="btn btn-link p-0 lilacColour border-0">
+        <span class="fw-medium ms-2 me-2 blueColor">recruitment@3em.it</span>
+        <button onclick="copyEmail()" class="btn btn-link p-0 blueColor border-0">
           <i class="fas fa-copy"></i>
         </button>
       </div>
     </div>
     <div class="mx-4">
-      <hr class="border-2 lilacColour opacity-100" />
+      <hr class="border-2 blueColor opacity-100" />
     </div>
 
 
@@ -280,9 +280,9 @@
                     <div class="p-2 ms-2 d-flex align-items-center border-0">
                         <!-- Bottone Chevron -->
                         <button class="btn btn-link text-decoration-none me-2 toggle-btn" type="button" data-index="${index}">
-                            <i class="fas fa-chevron-down fa-lg lilacColour chevron"></i>
+                            <i class="fas fa-chevron-down fa-lg blueColor chevron"></i>
                         </button>
-                        <h5 class="mb-0">${job.title}</h5>
+                        <h5 class="mb-0 blueColor">${job.title}</h5>
                     </div>
                     <div class="card-body">
                         <p class="card-text"><strong>Descrizione: </strong><span id="desc${index}" class="d-block overflow-hidden ">${shortDescription}</span></p>
@@ -346,5 +346,4 @@
     }
   </script>
 </body>
-
 </html>

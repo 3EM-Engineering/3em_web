@@ -232,7 +232,7 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
           </li>
           <li class="nav-item mx-3">
             <a class="nav-link active" aria-current="page" href="#doveSiamo"
-              >Where We Are</a
+              >Where we Are</a
             >
           </li>
           <li class="nav-item mx-3">
@@ -2870,20 +2870,66 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
-  <footer class="text-center text-white">
-    <section class="col-12">
-      <a
-        class="btn btn-outline-light rounded-pill m-1"
-        href="https://www.instagram.com/3emengineering/"
-        role="button"
-        ><i class="fab fa-instagram"></i
-      ></a>
-      <a
-        class="btn btn-outline-light rounded-pill m-1"
-        href="https://www.linkedin.com/company/3em-engineering"
-        role="button"
-        ><i class="fab fa-linkedin-in"></i
-      ></a>
-    </section>
+  <footer class="text-center bg-light">
+    <div class="container">
+      <section class="mt-5">
+        <div class="row text-center d-flex justify-content-center pt-5 text-primary">
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#chiSiamo">About us</a>
+            </h6>
+          </div>
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#settori">Sectors</a>
+            </h6>
+          </div>
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#collaborazioni">Collaborations</a>
+            </h6>
+          </div>
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#doveSiamo">Where we are</a>
+            </h6>
+          </div>
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="workwithus.php">Work with us</a>
+            </h6>
+          </div>
+        </div>
+      </section>
+      <hr class="my-4" />
+      <section class="mb-4">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <a href="#home">
+              <img src="assets\img\blu.svg" alt="logo3emblu" width="100"></a>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Pagine social -->
+      <section class="text-center text-primary mb-3">
+        <a href="https://www.instagram.com/3emengineering/" class="me-3">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://it.linkedin.com/company/3em-engineering" class="ms-3">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </section>
+      <!-- Pagine social -->
+    </div>
+  
+    <!-- Copyright -->
+    <div class="d-flex justify-content-between text-center text-white p-3 bg-secondary">
+      <div class="ms-1">© 2025 Copyright 3em-Engineering</div>
+      <a href="#home" class="me-1">
+        <i class="fa-solid fa-arrow-up"></i> Back to top
+      </a>
+    </div>
+    <!-- Copyright -->
   </footer>
 </html>
