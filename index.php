@@ -2043,29 +2043,29 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
     <section class="mt-5">
       <div class="row text-center d-flex justify-content-center pt-5 text-primary">
         <div class="col-md-2">
-          <h6 class="text-uppercase font-weight-bold">
+          <p class="text-uppercase fw-bold small">
             <a href="#chiSiamo">Chi siamo</a>
-          </h6>
+          </p>
         </div>
         <div class="col-md-2">
-          <h6 class="text-uppercase font-weight-bold">
+          <p class="text-uppercase fw-bold small">
             <a href="#settori">Settori</a>
-          </h6>
+          </p>
         </div>
         <div class="col-md-2">
-          <h6 class="text-uppercase font-weight-bold">
+          <p class="text-uppercase fw-bold small">
             <a href="#collaborazioni">Collaborazioni</a>
-          </h6>
+          </p>
         </div>
         <div class="col-md-2">
-          <h6 class="text-uppercase font-weight-bold">
+          <p class="text-uppercase fw-bold small">
             <a href="#doveSiamo">Dove siamo</a>
-          </h6>
+          </p>
         </div>
         <div class="col-md-2">
-          <h6 class="text-uppercase font-weight-bold">
+          <p class="text-uppercase fw-bold small">
             <a href="workwithus.php">Lavora con noi</a>
-          </h6>
+          </p>
         </div>
       </div>
     </section>
@@ -2094,8 +2094,8 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
   <!-- Copyright -->
   <div class="d-flex justify-content-between text-center text-white p-3 bg-secondary">
     <div class="ms-1">© 2025 Copyright 3em-Engineering</div>
-    <a href="#home" class="me-1">
-      <i class="fa-solid fa-arrow-up"></i> Back to top
+    <a href="#home" class="me-1 text-white">
+      <i class="fa-solid fa-arrow-up text-white"></i> Back to top
     </a>
   </div>
   <!-- Copyright -->
