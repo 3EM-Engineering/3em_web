@@ -80,7 +80,7 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.0/dist/chart.umd.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
-  <body>
+  <body class="overflow-x-hidden">
     <a
       class="close-navbar-toggler collapsed"
       data-toggle="collapse"
@@ -232,7 +232,7 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
           </li>
           <li class="nav-item mx-3">
             <a class="nav-link active" aria-current="page" href="#doveSiamo"
-              >Where we Are</a
+              >Where we are</a
             >
           </li>
           <li class="nav-item mx-3">
@@ -2873,41 +2873,42 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
   <footer class="text-center bg-light">
     <div class="container">
       <section class="mt-5">
-        <div class="row text-center d-flex justify-content-center pt-5 text-primary">
+        <div class="flex-row flex-wrap text-center d-flex justify-content-center pt-5 text-primary gap-2">
           <div class="col-md-2">
             <p class="text-uppercase fw-bold small">
-              <a href="#chiSiamo">Chi siamo</a>
+              <a href="#chiSiamo">About us</a>
             </p>
           </div>
           <div class="col-md-2">
             <p class="text-uppercase fw-bold small">
-              <a href="#settori">Settori</a>
+              <a href="#settori">Sectors</a>
             </p>
           </div>
           <div class="col-md-2">
             <p class="text-uppercase fw-bold small">
-              <a href="#collaborazioni">Collaborazioni</a>
+              <a href="#collaborazioni">Collaborations</a>
             </p>
           </div>
           <div class="col-md-2">
             <p class="text-uppercase fw-bold small">
-              <a href="#doveSiamo">Dove siamo</a>
+              <a href="#doveSiamo">Where we are</a>
             </p>
           </div>
           <div class="col-md-2">
             <p class="text-uppercase fw-bold small">
-              <a href="workwithus.php">Lavora con noi</a>
+              <a href="workwithus.php">Work with us</a>
             </p>
           </div>
         </div>
       </section>
       <hr class="my-4" />
-      <section class="mb-4">
+      <section>
         <div class="row d-flex justify-content-center">
           <div class="col-lg-8">
             <a href="#home">
-              <img src="assets\img\blu.svg" alt="logo3emblu" width="100"></a>
+              <img src="assets\img\blu.svg" alt="logo3emblu" width="50"></a>
           </div>
+          <p class="mt-3 text-secondary">TRE EMME ENGINEERING SRL.</p>
         </div>
       </section>
   
@@ -2925,7 +2926,7 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
   
     <!-- Copyright -->
     <div class="d-flex justify-content-between text-center text-white p-3 bg-secondary">
-      <div class="ms-1">© 2025 Copyright 3em-Engineering</div>
+      <div class="ms-1">© 2025 Copyright Tre Emme Engineering</div>
       <a href="#home" class="me-1 text-white">
         <i class="fa-solid fa-arrow-up text-white"></i> Back to top
       </a>

@@ -2041,7 +2041,7 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
 <footer class="text-center bg-light">
   <div class="container">
     <section class="mt-5">
-      <div class="row text-center d-flex justify-content-center pt-5 text-primary">
+      <div class="flex-row flex-wrap text-center d-flex justify-content-center pt-5 text-primary gap-2">
         <div class="col-md-2">
           <p class="text-uppercase fw-bold small">
             <a href="#chiSiamo">Chi siamo</a>
@@ -2070,12 +2070,13 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
       </div>
     </section>
     <hr class="my-4" />
-    <section class="mb-4">
+    <section>
       <div class="row d-flex justify-content-center">
         <div class="col-lg-8">
           <a href="#home">
-            <img src="assets\img\blu.svg" alt="logo3emblu" width="100"></a>
+            <img src="assets\img\blu.svg" alt="logo3emblu" width="50"></a>
         </div>
+        <p class="mt-3 text-secondary">TRE EMME ENGINEERING SRL.</p>
       </div>
     </section>
 
@@ -2093,7 +2094,7 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
 
   <!-- Copyright -->
   <div class="d-flex justify-content-between text-center text-white p-3 bg-secondary">
-    <div class="ms-1">© 2025 Copyright 3em-Engineering</div>
+    <div class="ms-1">© 2025 Copyright Tre Emme Engineering</div>
     <a href="#home" class="me-1 text-white">
       <i class="fa-solid fa-arrow-up text-white"></i> Back to top
     </a>
