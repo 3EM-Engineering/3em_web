@@ -670,6 +670,31 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
     </div>
   </section>
 
+  <section class="container px-4 px-md-auto" id="parlanodinoi">
+    <div class="col-12 section-mini-title">Parlano di noi</div>
+    <!-- <div class="row position-relative">
+      <div class="col-12 section-title">Di cosa ci occupiamo</div>
+    </div> -->
+    <div class="row justify-content-start justify-content-md-center">
+      <div class="col-12 col-md-8 col-xl-4 card-settori" data-aossssss="fade-up-right">
+        <div class="card-body bg-black" id="economiaId" style="cursor:pointer">
+          <div class="card-text">
+            <h2>Da Napoli al mondo, ecco l'industria 5.0</h2>
+            <span>
+              Siamo orgogliosi di essere stati protagonisti di un articolo che racconta la nostra storia trentennale, la vocazione all’innovazione digitale e i progetti di internazionalizzazione in Portogallo e Cile. </br> <span class="fw-bold text-primary">Clicca qui </span> per leggere l’articolo completo e scoprire come 3EM Engineering sta crescendo nei mercati esteri.
+            </span>
+          </div>
+          <img
+            src="/images/parlanodinoi/articolo.png"
+            alt="" 
+            style="object-fit: cover;width: 100%"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <section class="container px-4 px-md-auto mt-5" id="sponsor" data-aossssss="fade-up">
     <div class="col-12 section-mini-title">Sponsor</div>
     <div class="row unina_section align-items-center justify-content-center justify-content-md-between">
@@ -2102,6 +2127,18 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
   <!-- Copyright -->
 </footer>
 
+<script>
+  var economiaId = document.getElementById("economiaId");
+  // on click go on www.google.it
+  economiaId.addEventListener("click", function () {
+    window.location.href = "/images/parlanodinoi/articolo.pdf";
+  });
+
+  // se quando carico la pagina la prima volta e nell'url afine url c'e' "parlanodinoi" ricarica la pagina e vai su /#parlanodinoi
+  if (window.location.href.indexOf("parlanodinoi") > -1) {
+    window.location.href = "/#parlanodinoi";
+  }
+</script>
 </html>
 <?php
 // Fine della pagina PHP
