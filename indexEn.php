@@ -2950,11 +2950,26 @@ ob_start(); // Avvia il buffer di output per evitare problemi di cache
   
     <!-- Copyright -->
     <div class="d-flex justify-content-between text-center text-white p-3 bg-secondary">
-      <div class="ms-1">© 2025 Copyright Tre Emme Engineering</div>
+      <div class="ms-1">© <span id="anno"></span> Copyright Tre Emme Engineering</div>
       <a href="#home" class="me-1 text-white">
         <i class="fa-solid fa-arrow-up text-white"></i> Back to top
       </a>
     </div>
     <!-- Copyright -->
   </footer>
+  <script>
+    const currentYear = new Date().getFullYear();
+    document.getElementById('anno').textContent = currentYear;
+ 
+   var economiaId = document.getElementById("economiaId");
+   // on click go on www.google.it
+   economiaId.addEventListener("click", function () {
+     window.location.href = "/images/parlanodinoi/articolo.pdf";
+   });
+ 
+   // se quando carico la pagina la prima volta e nell'url afine url c'e' "parlanodinoi" ricarica la pagina e vai su /#parlanodinoi
+   if (window.location.href.indexOf("parlanodinoi") > -1) {
+     window.location.href = "/#parlanodinoi";
+   }
+ </script>
 </html>
